@@ -3,7 +3,7 @@ wget https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation
 wget https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
 
 #init our kubernetes cluster
-sudo kubeadmin init --pod-network-cidr=192.168.0.0/16
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 
 #Set up ccount on the master to have access to the API server
 mkdir -p $HOME/.kube
